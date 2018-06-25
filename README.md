@@ -2,7 +2,7 @@
 
 This is our implementation for the paper:
 
-xxxxxxxxxxxxxxxxxxxxxxxxxxx
+Da Cao, Xiangnan He, Lianhai Miao, Guangyi Xiao, Hao Chen, and Richang Hong. Social-Enhance Attentive Group Recommendation. IEEE Transactions on Knowledge and Data Engineering, 2018.
 
 In order to learn the group interest, we first utilize the social infomation to enchance the representation of individual user. then, we use attention mechanism to learn the aggregation strategy from data in a dynamic way.
 
