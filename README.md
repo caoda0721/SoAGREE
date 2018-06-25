@@ -4,7 +4,7 @@ This is our implementation for the paper:
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-one sentence to introduce this repro
+In order to learn the group interest, we first utilize the social infomation to enchance the representation of individual user. then, we use attention mechanism to learn the aggregation strategy from data in a dynamic way.
 
 **Please cite our paper if you use our codes. Thanks!** 
 
