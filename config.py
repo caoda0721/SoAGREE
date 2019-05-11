@@ -14,10 +14,10 @@ class Config(object):
         self.follow_in_user_path = "./data/MaFengWo/userFollow.txt"
         self.embedding_size = 32
         self.epoch = 100
-        self.num_negatives = 6
-        self.batch_size = 1024
-        self.lr = [0.000001, 0.000001, 0.0000005]
-        self.drop_ratio = 0.2
+        self.num_negatives = 10
+        self.batch_size = 512
+        self.lr = [0.000005, 0.000001, 0.0000005]
+        self.drop_ratio = 0.1
         self.topK = 5
         self.num_follow = 13096
         self.balance = 6

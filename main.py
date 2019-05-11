@@ -25,13 +25,13 @@ def training(model, train_loader, epoch_id, config, type_m):
     learning_rates = config.lr
     # learning rate decay
     lr = learning_rates[0]
-    if epoch_id >= 15 and epoch_id < 25:
+    if epoch_id >= 20 and epoch_id < 50:
         lr = learning_rates[1]
-    elif epoch_id >=20:
+    elif epoch_id >=50:
         lr = learning_rates[2]
     # lr decay
-    if epoch_id % 5 == 0:
-        lr /= 2
+    # if epoch_id % 5 == 0:
+    #     lr /= 2
 
     # optimizer
     optimizer = optim.RMSprop(model.parameters(), lr)
@@ -118,6 +118,8 @@ if __name__ == '__main__':
             'Group Iteration %d [%.1f s]: HR = %.4f, '
             'NDCG = %.4f, [%.1f s]' % (epoch, time() - t1, hr, ndcg, time() - t2))
 
+        # with open("./result.txt", "w") as fw:
+        #     fw.write("user: " + u_hr + "\t" + u_ndcg + "\t group:" + hr + "\t" + ndcg + "\t" +"\n")
 
     print("Done!")
 
